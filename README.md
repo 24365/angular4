@@ -1,7 +1,7 @@
 # angular4
 Angular@4.0.0
 # 安装使用笔记
-## (在此之前请全局更新版本 sudo npm update -g ，避免出现异常问题; 如果在webstorm修改文件代码报错：clear Read-Only State， 请输入命令解锁：sudo chown -R 你电脑的用户名 ./angularApp)
+## (在此之前请全局更新版本 sudo npm update -g ，避免出现异常问题; 如果在webstorm修改文件代码报错：clear Read-Only State， 请输入命令解锁：sudo chown -R 你电脑的用户名 当前目录)
     1. node： 6.10.1 | 7.x  (或自行使用3M安装法，切换node版本，CNode技术社区有帖子详细介绍)
     2. angularCLI：sudo npm install -g @angular/cli  (下载时间过长，请在好的wifi环境下)
     3. 查看版本信息：ng -v     (可以修改angular项目中使用的npm源，减少npm包下载时间：ng set --global packageManager=cnpm)
