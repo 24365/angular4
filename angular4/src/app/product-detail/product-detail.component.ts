@@ -25,7 +25,7 @@ export class ProductDetailComponent implements OnInit {
     this.comments = this.productService.getCommentsForProductId(productId);
   }
   addComment(){
-    let comment = new Comment(0,this.product.id,new Date().toISOString(),"someone",this.newRating,this.newComment);
+    let comment = new Comment(0,this.product.id,new Date().toLocaleString(),"someone",this.newRating,this.newComment);
     this.comments.unshift(comment);
     let sum = this.comments.reduce((sum, comment) => sum + (comment as any).rating, 0);
     this.product.rating=Math.floor(((sum as number) / this.comments.length)*100)/100;
