@@ -25,7 +25,7 @@ Angular@4.0.0
              "prod": "environments/environment.prod.ts"
            }
 # angular报错解决
-  1. Property 'x' does not exist on type 'y'.
+    1. Property 'x' does not exist on type 'y'.
      报错解决：y.x  =>  (y as any).x
-  2. The left-hand side of an arithmetic operation must be of type 'any', 'number' or an enum type.
+    2. The left-hand side of an arithmetic operation must be of type 'any', 'number' or an enum type.
      报错解决：x => (x as any)
